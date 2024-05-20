@@ -16,20 +16,28 @@
 
 		$(function() {
             console.log("function");
-			$("p").on("click", function() {			// <p>요소를 모두 선택함.
-				$("span").css("fontSize", "28px");	// <span>요소를 모두 선택함.
+			$(".p1").on("click", function() {			// <p>요소를 모두 선택함.
+				$(".span1").css("fontSize", "28px");	// <span>요소를 모두 선택함.
 			});
+
+            $(".p2").on("click", function() {
+				$("#jq").css("border", "2px solid orange");		// 아이디가 "jq"인 요소를 선택함.
+            });
 		});
 	</script>
 </head>
 
 <body>
 	<h1>HTML 태그 선택자</h1>
-	<p>
-        이제부터<span>제이쿼리</span>를 다 같이 공부해보죠!!
+	<p class="p1">
+        이제부터<span class="span1">제이쿼리</span>를 다 같이 공부해보죠!!
         <br>
 	    마우스로 글씨를 클릭해보세요!!
     </p>
+    <h1>아이디 선택자</h1>
+
+	<p id="jq">이제부터 제이쿼리를 다 같이 공부해보죠!!</p>
+	<p class="p2">마우스로 글씨를 클릭해보세요!!</p>
 </body>
 
 </html>
